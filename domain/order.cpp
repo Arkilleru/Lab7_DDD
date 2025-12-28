@@ -48,4 +48,20 @@ Money Order::calculate_total() const {
     return total;
 }
 
+const std::string& Order::get_id() const {
+        return id_;
+    }
+
+const std::string& Order::get_customer_id() const {
+        return customer_id_;
+    }
+
+OrderStatus Order::get_status() const {
+        return status_;
+    }
+
+const std::vector<OrderLine>& Order::get_lines() const {
+        return lines_;
+    }
+
 } // namespace domain
